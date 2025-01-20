@@ -10,15 +10,15 @@ Prices = [[300, 500],
 
 Array2 = [200, 100]
 
-# Calculate the result
+# Calculate the result 
 Ans = []
-# (300*200 + 500*100) as an example calculation
 
 for i in range(len(Prices)):
-    row_sum = 0
-    for j in range(len(Prices[0])):
-        # COMPLETE THE MISSING LOGIC HERE
-        pass
-
+          row_sum = 0 
+          for j in range(len(Prices[0])):
+                    # Calculate the product and add it to the row_sum
+                    row_sum += Prices[i][j] * Array2[j]
+                    # Append the row_sum to the Ans list
+                    Ans.append(row_sum)
 
 print(Ans)
